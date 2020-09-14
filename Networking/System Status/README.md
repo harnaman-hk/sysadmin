@@ -1,6 +1,6 @@
 # System Status
 This is a bash script to send email at midnight of 
-status of all services, error logs and warnings.
+status of all services, error logs and warnings. For suspicious user activity and system warnings, the logs are scanned for possible indicators as sending the entire logs can be too volumnious.
 
 ## Email at midnight
 This can be achieved by setting up a cron job in linux.
@@ -8,6 +8,7 @@ This can be achieved by setting up a cron job in linux.
 - Add `@midnight /path/to/systemstatus.sh` to the file that opens up in your terminal.
 
 ## Prequisites for running the script
+- Ensure that the script is executable. Run `chmod +x /path/to/systemstatus.sh`
 - If using Gmail, ensure less secure app access is enabled
 - Ensure that ssmtp is installed and configured properly. Following steps can be followed to do the same:
   
