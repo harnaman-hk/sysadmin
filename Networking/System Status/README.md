@@ -1,6 +1,5 @@
 # System Status
-This is a bash script to send email at midnight of 
-status of all services, error logs and warnings. For suspicious user activity and system warnings, the logs are scanned for possible indicators as sending the entire logs can be too volumnious.
+This is a bash script to send email at midnight of status of all services, error logs and warnings. For suspicious user activity and system warnings, the logs are filtered for possible indicators as sending the entire logs can be too volumnious and possibly irrelevant. 
 
 ## Email at midnight
 This can be achieved by setting up a cron job in linux.
