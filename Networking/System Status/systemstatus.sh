@@ -38,4 +38,4 @@ if [ -f "/var/log/syslog" ]; then
   done
 fi
 
-#mail -s "System Status `$DATE`" receiver_email << servicelogs
+mail -s "System Status `$DATE`" receiver_email << servicelogs
